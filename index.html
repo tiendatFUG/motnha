@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<title>Một nhà Cool</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+<script>
+    function myFunction() {
+        document.getElementById("panel").style.display = "block";
+    }
+    function myFunction1() {
+        document.getElementById("panel1").style.display = "block";
+    }
+    function tangSo() {
+        for (var i = 0; i < 99999999; i++) {
+            document.getElementById('inc').value = i;
+        }
+    }
+
+</script>
+<!-- Hieu ung load button -->
+
+
+<body class="w3-light-grey">
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">DONATE FOR ME <i
+                        class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">PAYPAL: tiendatfug@gmail.com</a>
+                    <a href="#" class="w3-bar-item w3-button">ViettelPay-MOMO: 0867677061</a>
+                    <a href="#" class="w3-bar-item w3-button">TPBank: 02444639501</a>
+                </div>
+            </div>
+            <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TIPS</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">CONTACT <i
+                        class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Email: infor.motnha@gmail.com</a>
+                    <a href="#" class="w3-bar-item w3-button">Phone: 0867677061</a>
+                    <a href="#" class="w3-bar-item w3-button">Group: facebook</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">SUB YOUTUBE</a>
+                    <a href="#" class="w3-bar-item w3-button">FANPAGE</a>
+                    <a href="#" class="w3-bar-item w3-button">THANKS</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">DONATE FOR ME <i
+                    class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">PAYPAL: tiendatfug@gmail.com</a>
+                <a href="#" class="w3-bar-item w3-button">ViettelPay-MOMO: 0867677061</a>
+                <a href="#" class="w3-bar-item w3-button">TPBank: 02444639501</a>
+            </div>
+        </div>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TIPS</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">CONTACT <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">Email: infor.motnha@gmail.com</a>
+                <a href="#" class="w3-bar-item w3-button">Phone: 0867677061</a>
+                <a href="#" class="w3-bar-item w3-button">Group: facebook</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">SUB YOUTUBE</a>
+                <a href="#" class="w3-bar-item w3-button">FANPAGE</a>
+                <a href="#" class="w3-bar-item w3-button">THANKS</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>Một nhà Cool</b></h1>
+            <h3><b>Contact me: infor.motnha@gmail.comcom</b></h3>
+            <p><span class="w3-tag">Tiến Tiến</span> Blog</p>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <img src="./IMG/img1.png" alt="Nature" style="width:100%">
+                    <div class="w3-container">
+                        <h3><b>I'm Sorry. I'm a newber</b></h3>
+                        <h5>Author: Tiến Tiến, <span class="w3-opacity">July 15, 2020</span></h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p>
+                            Hello các bạn.
+                            Cảm ơn các bạn đã ghé thăm. Một nhà là kênh youtube không giới hạn chủ đề, thiên hướng mẹo
+                            vật sẽ được nói đến nhiều hơn.
+                            Kênh được thành lập ngày 13 tháng 7 năm 2020.
+                            Channal mới nên còn nhiều thiếu sót mong các bạn bỏ qua.
+                            Tớ đang học ai ti nên sắp tới sẽ có nhiều video về ai ti nhé.
+                            Tớ luôn luôn đón nhận sự góp ý từ các bạn, vì vậy đừng quên phản ánh chất lượng kênh qua địa
+                            chỉ mail ở dưới phần mô tả nhé.
+                            Luôn ủng hộ tớ nhé, bằng cách đăng ký, like và comment ý kiến cá nhân.
+                            Ai yêu thích có thể donate tớ nhớ, tớ cảm ơn nhiêu( cố gắng cho cuộc sống bớt sầu lo í ).
+                            Cảm ơn mọi người. Chúc mọi người luôn gặp nhiều may mắn.
+                        </p>
+                        <p id="panel" hidden>
+                            Hello everyone.
+                            Thank you for visiting. This page is an unlimited content of YouTube. We also talk about the
+                            life and tips in life.
+                            The channel was established on July 13, 2020.
+                            This is new, so there are many shortcomings that you can ignore.
+                            I'm learning IT, of course I will be more videos about IT.
+                            I always welcome suggestions from you guys, so don't forget to reflect the channel quality
+                            via the email address below the description.
+                            Always support me, by registering, liking and commenting on my personal opinions.
+                            Anyone who loves can donate me, I thank you very much (trying to make life less sad).
+                            Thanks everyone.
+                        </p>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                                <p><button onclick="myFunction()"
+                                        class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE
+                                            »</b></button></p>
+                            </div>
+                            <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span
+                                            class="w3-tag">999999999999999</span>
+                                    </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <img src="./IMG/live.jpg" alt="Norway" style="width:100%">
+                    <div class="w3-container">
+                        <h3><b>Live Traffic - Free website traffic, exchange views and auto click backlink.</b></h3>
+                        <h5>Author: Tiến Tiến, <span class="w3-opacity">July 15, 2020</span></h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p>
+                            Live Traffic là ứng dụng cung cấp giải pháp tăng traffic miễn phí cho website hàng đầu tại
+                            Việt Nam.<br />
+
+                            Từ những ngày đầu Live Traffic được phát triển từ nhu cầu thực tế của cá nhân và mong muốn
+                            hỗ trợ cộng đồng đạt được lượng truy cập cần thiết cho website mà không cần phải đầu tư vào
+                            những chiến dịch quảng cáo tốn kém.<br />
+
+                            Trải qua nhiều phiên bản được đông đảo người dùng ủng hộ, hiện tại phiên bản Live Traffic
+                            3.1 là phiên bản hoàn thiện và ổn định nhất.<br />
+
+                            Live Traffic vẫn còn tiếp tục được nghiên cứu, phát triển những tính năng tốt nhất dựa trên
+                            những yêu cầu thực tế từ phía người sử dụng.<br />
+
+                            Tổng quan về cách hoạt động của Live Traffic:<br />
+                            - Đăng ký tài khoản miễn phí<br />
+                            - Thêm Url mới<br />
+                            - Chạy tool để kiếm điểm<br />
+                            - Nhận traffic từ người khác khác<br />
+                            - Giới thiệu người dùng mới để nhận hoa hồng<br />
+                            Link: <a
+                                href="https://2pink.org/en/register?ref=29842">https://2pink.org/en/register?ref=29842</a>
+                        </p>
+                        <p id="panel1" hidden>
+                            From the early days Live Traffic was developed based on the actual needs of individuals and
+                            desired to support the community to gain the necessary traffic for the website without
+                            having to invest in expensive advertising campaigns.<br />
+
+                            Experienced in many versions popular with the supporters, the current version of Live
+                            Traffic 3.0 is the most complete and stable version.<br />
+
+                            Live Traffic continues to be researched, developing the best features based on the actual
+                            requirements from the user.<br />
+                            How it works:<br />
+                            - Sign up for a free account<br />
+                            - Add your Url<br />
+                            - Run the tool to earn points<br />
+                            - Receive traffic<br />
+                            - Receive traffic<br />
+                            Link: <a
+                                href="https://2pink.org/en/register?ref=29842">https://2pink.org/en/register?ref=29842</a>
+                        </p>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                                <p><button onclick="myFunction1()"
+                                        class="w3-button w3-padding-large w3-white w3-border"><b>READ
+                                            MORE
+                                            »</b></button></p>
+                            </div>
+                            <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span
+                                            class="w3-badge">99999999999</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END BLOG ENTRIES -->
+            </div>
+
+            <!-- Introduction menu -->
+            <div class="w3-col l4">
+                <!-- About Card -->
+                <div class="w3-card w3-margin w3-margin-top">
+                    <div class="w3-container w3-white">
+                        <!--<video width="320" height="240" controls autoplay style="width:100%">
+                            <source src="IMG/Github.mp4" alt="Nature" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video> -->
+                        <iframe style="width:100%; height:240px" src="https://www.youtube.com/embed/YyyTxuGjafA?autoplay=1" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <h4><b>Một nhà Cool</b></h4>
+                        <p>
+                            Channal <b><span>Một nhà Cool</span></b>- Video for fun <br />
+                            Unlimited contend of video.<br />
+                            Please subscribe, like, comment my channal.<br />
+                            Please help me to improve this channal.<br />
+                            Fanpage: https://www.facebook.com/motnhacool<br />
+                            Phone: 0779608870<br />
+                            Website: <a href="https://motnhacool.github.io/">https://motnhacool.github.io/</a><br />
+                            Email: infor.motnha@gmail.com<br />
+                            Manager: Tien _ tiendatfug@gmail.com<br />
+                            Thanks a lot.<br />
+                            ------------------------------------------------<br />
+                            Donate for me/ Ủng hộ tôi nhé:<br />
+                            Momo - ViettelPay: 0867677061<br />
+                            TPBank: 02444639501<br />
+                            Không donate cũng được nè, rất vui được gặp bạn.<br />
+                            -------------------------------------------------<br />
+                        </p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Posts -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Make Money Online</h4>
+                        <h6>Kiếm tiền Online</h6>
+                    </div>
+                    <ul class="w3-ul w3-hoverable w3-white">
+                        <li class="w3-padding-16">
+                            <img src="./IMG/momo.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">MOMO</span><br>
+                            <span>Phần thưởng cao lên đến 999</span>
+                        </li>
+                        <li class="w3-padding-16">
+                            <img src="./IMG/vndc.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">VNDC</span><br>
+                            <span>Tiền ảo VietName +10k/người</span>
+                        </li>
+                        <li class="w3-padding-16">
+                            <img src="./IMG/akulaku.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">AKULAKU</span><br>
+                            <span>Tặng voucher mua hàng, free ship</span>
+                        </li>
+                        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+                            <img src="./IMG/adsen.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">ADSEN</span><br>
+                            <span>Chạy quảng cáo.</span>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- Labels / tags -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- END Introduction Menu -->
+            </div>
+
+            <!-- END GRID -->
+        </div><br>
+
+        <!-- END w3-content -->
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-grey">
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h3><b>Một nhà Cool!</b></h3>
+                <h6>Welcome you to here</h6>
+                <p>I want to thank you for giving me the best day of my life
+                    Oh just to be with you is having the best day of my life
+                    Push the door, I'm home at last and I'm soaking through and through
+                    Then you handed me a towel and all I see is you
+                    And even if my house falls down now, I wouldn't have a clue
+                    Because you're near me and
+                    I want to thank you for giving me the best day of my life
+                    Oh just to be with you is having the best day of my life
+                    I want to thank you for giving me the best day of my life
+                    Oh just to be with you is having the best day of my life.</p>
+                <h3><b>Thank You Song</b></h3>
+                <p>Source: <a href="https://www.lyricfind.com/">LyricFind</a></p>
+            </div>
+
+            <div class="w3-third">
+                <h3>VIDEO INTROSS</h3>
+
+                <iframe style="width:100%; height:240px" src="https://www.youtube.com/embed/cKCMtufYN_0?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="w3-third">
+                <h3>CONTACT US!</h3>
+                <ul class="w3-ul">
+                    <li class="w3-padding-16 w3-hover-black">
+                        <!-- ICON  -->
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-forward-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.471 17.471 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969zM12.646.646a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z" />
+                        </svg>
+
+                        <span class="w3-large">Phone: </span><br>
+                        <span>+84 799608870</span>
+                    </li>
+                    <li class="w3-padding-16 w3-hover-black">
+                        <!-- ICON  -->
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg>
+
+                        <span class="w3-large">Mail: </span><br>
+                        <span>infor.motnha@gmail.com</span>
+                    </li>
+                    <li class="w3-padding-16 w3-hover-black">
+                        <!-- ICON  -->
+                        <img src="./IMG/youtube.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+
+                        <span class="w3-large">YOUTUBE: </span><br>
+                        <a
+                            href="https://www.youtube.com/channel/UCIj0G6J_u0TWXNEixnEhg7g">https://www.youtube.com/channel/UCIj0G6J_u0TWXNEixnEhg7g</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+            title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+
+
+</body>
+
+</html>
